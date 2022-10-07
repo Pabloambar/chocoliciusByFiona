@@ -282,6 +282,7 @@ main{
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 85%;
     height: 100%;
@@ -289,6 +290,37 @@ main{
     /* border: solid 1px whitesmoke; */
     justify-content: center;
 
+}
+
+
+
+@keyframes blink {
+  to {
+      background: transparent;
+      opacity: 0;
+  }
+}
+
+
+
+.infoCompra{
+  color: white;
+  font-family: 'Architects Daughter';
+  font-weight: bold;
+  background-color: rgb(78, 38, 1);
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  width: 210px;
+  height: 160px;
+  text-align: center;
+  align-items: center;
+  animation:  blink 0.5s  infinite;
+  border-radius: 10px;
+}
+
+.infoCompra:hover{
+  animation: none;
 }
 
 .cajas {
@@ -303,7 +335,9 @@ main{
     padding: 30px;
 }
 
-.cajitas{
+
+
+/* .cajitas{
     font-family: 'Architects Daughter';
     font-size: 15px;
     font-weight: bold;
@@ -314,20 +348,15 @@ main{
     width: 200px;
     height: 200px;
     transition: transform 1s ease-out;
-    /* display: inline-block; */
-    /* border: solid 1px black; */
-}
-.cajitas a{
-  display:none;
-}
-.cajitas span{
-  display: none;
+    display: inline-block; 
+    border: solid 1px black; 
 }
 
+
   .cajitas:hover{
-    transform: scale(2);
+    transform: scale(1);
     background-color:white;
-  }
+  } */
 
 
 /* .cajitas p {
@@ -339,29 +368,41 @@ main{
   } */
 
 
+  .cajitas a{
+    display:none;
+  }
+  .cajitas span{
+    display: none;
+  }
+
+  /* .cajitas h2{
+    display:none;
+  } */
 
 .imgCuad {
     width: 150px;
     height: 150px;
     border-radius: 1rem;
     border-radius: 8px;
-background: #e0e0e0;
-box-shadow:  15px 15px 30px #5a5a5a,
+    background: #e0e0e0;
+    box-shadow:  15px 15px 30px #5a5a5a,
              -15px -15px 30px #ffffff;
 }
 
-/* .imgCuad:hover {
-  width: 250px;
-  height: 250px;
+.imgCuad:hover {
+  /* width: 155px;
+  height: 155px; */
+  transition: all 0.3s linear;
+    transform: scale(1.09);
   border-radius: 1rem;
   border-radius: 8px;
-background: #e0e0e0;
-box-shadow:  15px 15px 30px #5a5a5a,
+  background: #e0e0e0;
+  box-shadow:  15px 15px 30px #5a5a5a,
            -15px -15px 30px #ffffff;
-} */
+}
 
 
-
+ 
 
 /* ################################################################################################################################################# */
       @media (max-width: 600px) {
@@ -582,12 +623,19 @@ box-shadow:  15px 15px 30px #5a5a5a,
             }
 
             .cajitas:hover{
-              width: 300px;
-              height: 450px;
-              background-color: white;
-              border: solid 1px black;;
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              /* width: 300px; */
+              /* height: 450px; */
+              /* background-color: white; */
+              /* border: solid 1px black;; */
             }
 
+            .cajitas h2{
+                 font-size: 15px;
+                 font-family: 'Architects Daughter';
+            }
             /* .imgCuad:hover {
               width: 250px;
               height: 250px;

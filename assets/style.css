@@ -262,6 +262,15 @@
       text-align: center; 
   }
 
+    main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center  ;
+      color: black;
+      width: 100%;
+  } 
+
     .cajaFlex{
         display: flex;
         flex-direction: column;
@@ -309,22 +318,16 @@
         animation-direction: alternate;
     }
 
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center  ;
-        color: black;
-        width: 100%;
-    }
+
 
     #descripcion{
       display: flex;
       flex-direction: column;
+      align-items:center;
       justify-content: center;
       background: linear-gradient(to top, var(--gradiente));
       width:900px;
-      height: 550px; 
+      height: 300px; 
       border-radius: 1rem;
       margin-top: 20px;
 
@@ -334,8 +337,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width:80%;
+        height: 100%; 
         gap: 20px;
-        width: 50%;
     }
 
     .info h1{
@@ -351,51 +355,47 @@
         color: black;
         font-size: 20px;
         font-family: 'Architects Daughter';
+        width:80%;
+        height: 100%; 
     }
 
     .firma p{
+      width: 100%;
       font-size: 35px;
       font-weight: bold;
       font-family: 'Corinthia';
     }
 
-    .btn-tienda{
+   
+
+    .back2{
       display: flex;
       flex-direction: column;
-      align-items: center;
-      width: 100px;
-      height: 140px;
-      border: solid 2px white;
-      border-radius: 10px;
-      background-color: rgba(139, 0, 0, 0.466) ;
-      border-radius: 10px;
-      /* background: #685353; */
-      box-shadow:  9px 9px 20px #3d0202,
-                  -9px -9px 20px #684e4e;
+      align-items:center;
+      justify-content: center;
+      background: linear-gradient(to top, var(--gradiente));
+      width:900px;
+      height: 500px; 
+      border-radius: 1rem;
+      margin-top: 20px;
+      gap: 20px;
     }
 
-    .btn-tienda:hover{
+    .backPromo{
       display: flex;
-      width: 110px;
-      height: 150px;
-      font-size: 30px;
-      background-color: red;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 60px;
     }
 
-    .img-tienda{
-      width: 100px;
-      height: 100px;
-      border-radius: 10px;
-      border: solid 2px wite;
-    }
-
-    .btn-tienda h2{
+    .back2 h3{
+      color: var(--chocoLight);
       font-family: 'Architects Daughter';
-      text-align: center;
-      font-weight: bold;
-      font-size: 25px;
-      /* color:rgb(8, 8, 75); */
-      color: rgba(255, 255, 255, 0.705);  ;
+      font-weight: 600;
+      font-size: 45px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .choco-promocion {
@@ -451,13 +451,56 @@
         border-color: brown;
         border-width: 10px;
         border-radius: 1rem;
+        width: 250px;
+        height: 250px;
     }
 
     .choco-promocion1{
       display: none;
     }
+
+
+    .btn-tienda{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 250px;
+      height: 250px;
+      border: solid 2px white;
+      border-radius: 10px;
+      background-color: rgba(139, 0, 0, 0.466) ;
+      border-radius: 10px;
+      /* background: #685353; */
+      box-shadow:  9px 9px 20px #3d0202,
+                  -9px -9px 20px #684e4e;
+    }
+
+    .btn-tienda:hover{
+      display: flex;
+      width: 270px;
+      height: 270px;
+      font-size: 50px;
+      background-color: red;
+    }
+
+    .img-tienda{
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      border: solid 2px wite;
+    }
+
+    .btn-tienda h2{
+      font-family: 'Architects Daughter';
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      /* color:rgb(8, 8, 75); */
+      color: rgba(255, 255, 255, 0.705);  ;
+    }
    
-    .back2{
+
+    .back3{
         display: flex;
         flex-direction: column;
         align-items: center;
