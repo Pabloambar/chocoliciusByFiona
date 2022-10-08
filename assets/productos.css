@@ -633,8 +633,9 @@ main{
             }
 
             .cajitas h2{
-                 font-size: 15px;
-                 font-family: 'Architects Daughter';
+              text-align: center;
+              font-size: 15px;
+              font-family: 'Architects Daughter';
             }
             /* .imgCuad:hover {
               width: 250px;
