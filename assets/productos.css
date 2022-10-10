@@ -337,23 +337,21 @@ main{
 
 
 
-/* .cajitas{
-    font-family: 'Architects Daughter';
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;;
-    align-items: center;;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    transition: transform 1s ease-out;
-    display: inline-block; 
-    border: solid 1px black; 
+ .cajitas{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: 'Architects Daughter';
+  font-size: 10px;
+}
+
+.cajitas h2{
+  text-align: center;
 }
 
 
-  .cajitas:hover{
+  /*.cajitas:hover{
     transform: scale(1);
     background-color:white;
   } */
