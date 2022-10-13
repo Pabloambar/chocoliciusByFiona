@@ -1,0 +1,15 @@
+
+
+.prod{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.img-prod{
+    display: flex;
+    width: 250px;
+    height: 250px;
+
+}
+
